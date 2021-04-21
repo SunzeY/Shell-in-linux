@@ -2,9 +2,9 @@ myshell: main.o
 	gcc main.o -o myshell
 
 main.o: main.c
-	gcc -c main.c -o main.o
+	gcc -c -o main.o -I./include main.c
 
-.PHONY: clean
+.PHONY: clean test
 
 clean:
 	rm -f main.o myshell
