@@ -2,5 +2,5 @@
 *.*
 !*.c
 !*.h
-!/
+!/include
 !Makefile
