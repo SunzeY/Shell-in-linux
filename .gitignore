@@ -4,3 +4,5 @@
 !*.h
 !/include
 !Makefile
+test.c
+testenv.c
