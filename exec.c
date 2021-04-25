@@ -93,7 +93,7 @@ void exe_cmd(int i) {
 		if(cmds[i].err_redir_fd!=STDERR)
 			dup2(cmds[i].err_redir_fd, fileno(stderr));
 		execvp(cmds[i].argv[0], cmds[i].argv);
-		_exit(EXIT_FAILURE);
+		exit(EXIT_FAILURE);
 	}
 }
 

@@ -108,9 +108,14 @@ int get_redir_info(char* match){
 		out_redir = 1;
 		is_append = 1;
 		is_redirective = 1;
-	} else if (!strcmp(match, "&>")) {
+	} else if (!strcmp(match, "$>")) {
 		out_redir = 1;
 		error_redir = 1;
+		is_redirective = 1;
+	} else if (!strcmp(match, "$>>")) {
+		out_redir = 1;
+		error_redir = 1;
+		is_append = 1;
 		is_redirective = 1;
 	} else if (!strcmp(match, "2>")) {
 		error_redir = 1;

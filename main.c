@@ -46,7 +46,6 @@ int main()
 		fgets(cmd_line, LINESIZE, stdin);
 		cmd_line[strlen(cmd_line)-1] = 0;
 		if(!strcmp(cmd_line, "exit")) break;
-		//printf("input: %s\n", cmd_line);
 		parse(cmd_line);
 		status = execute();
 		if (status==1) {

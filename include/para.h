@@ -11,7 +11,7 @@
 #define STDOUT 1
 #define STDERR 2
 
-#define MODE 0644                 //inial authoritation of a new file when automatically created
+#define MODE 0777                 //inial authoritation of a new file when automatically created
 
 /*different oflags value when calling open()*/
 #define OUTR_A_FLAG O_WRONLY|O_CREAT|O_APPEND

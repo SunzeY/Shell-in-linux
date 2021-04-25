@@ -6,3 +6,4 @@
 !Makefile
 test.c
 testenv.c
+signal.c
