@@ -1,0 +1,5 @@
+cd ..
+cd myshell
+cd myshell
+ls
+cat main.c
