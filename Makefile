@@ -1,5 +1,5 @@
-myshell: main.o parse.o exec.o
-	gcc main.o parse.o exec.o -o myshell
+myshell: main.o parse.o exec.o ctrl.o
+	gcc main.o ctrl.o parse.o exec.o -o myshell
 
 main.o: main.c
 	gcc -c -o main.o -I./include main.c
@@ -10,8 +10,8 @@ parse.o: parse.c
 exec.o: exec.c
 	gcc -c -o exec.o -I./include exec.c
 
-signal.o: signal.c
-	gcc -c -o signal.o signal.c
+ctrl.o: ctrl.c
+	gcc -c -o ctrl.o -I./include ctrl.c
 
 .PHONY: clean test
 

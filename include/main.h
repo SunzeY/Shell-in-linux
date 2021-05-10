@@ -17,5 +17,6 @@ int shell_space_alloc();
 void shell_init_ifo();
 void show_propmt();
 void shell_update();
+void record();
 
 #endif /*main.h*/

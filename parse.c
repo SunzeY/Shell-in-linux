@@ -130,4 +130,3 @@ int get_redir_info(char* match){
 	return redir_sign;
 }
 
-
