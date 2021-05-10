@@ -3,8 +3,8 @@
 !*.c
 !*.h
 !/include
-!/tmp
-!/report
+!/tmp/history.txt
+!/report .
 !Makefile
 !readme.md
 
