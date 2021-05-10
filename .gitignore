@@ -3,7 +3,8 @@
 !*.c
 !*.h
 !/include
+!/tmp
+!/report
 !Makefile
-test.c
-testenv.c
-signal.c
+!readme.md
+
